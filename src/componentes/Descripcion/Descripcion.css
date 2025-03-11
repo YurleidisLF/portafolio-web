@@ -1,0 +1,82 @@
+.section_descripcion {
+    max-width: 100vw; /* Limita el ancho al tamaño de la ventana */
+    position: relative;
+    background-image: url('./fondo1.jpg'); 
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.section_descripcion::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4); /* Tono blanquecino ajustado */
+    filter: blur(5px); /* Efecto de desenfoque más suave */
+    z-index: 1;
+}
+
+
+.foto {
+    width: 20%;
+    margin-right: 20px;
+    border-radius: 15%;
+    border: 3px solid #900C3F;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    filter: brightness(0.95);
+    position: relative;
+    z-index: 2; 
+}
+
+.foto:hover {
+    transform: scale(1.05) rotate(3deg);
+    filter: brightness(1.1);
+}
+
+.text-container {
+    position: relative;
+    z-index: 1; 
+}
+
+.descrip {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left; /* Mantiene los títulos alineados a la izquierda */
+    margin-bottom: 5px;
+}
+
+.descrip-text {
+    font-size: 18px;
+    text-align: justify; /* Justifica los párrafos */
+    line-height: 1.8; /* Espaciado entre líneas */
+    margin-bottom: 15px;
+    color: #333; /* Color oscuro para mejor legibilidad */
+}
+
+
+
+.icono {
+    width: 40px; /* Ajusta el tamaño de los íconos */
+    height: 40px;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Ajusta el espacio entre los íconos */
+}
+
+
+
+

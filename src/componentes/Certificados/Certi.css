@@ -1,0 +1,64 @@
+.certificaciones {
+    margin: 40px;
+    padding: 40px;
+    background-color: #f0f4fc;
+    border-radius: 10px;
+  }
+
+  .certificaciones-container {
+    background-image: url('./fondo8.jpg');
+    max-height: 500px; 
+    overflow-y: auto; 
+}
+
+.certificaciones-container::-webkit-scrollbar {
+    width: 0px; 
+}
+
+  .certificado {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .certificado-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .certificado h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #003366;
+  }
+  
+  .etiqueta {
+    background-color: #d6e0f0;
+    color: #003366;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 5px;
+  }
+  
+  .certificado p {
+    margin: 5px 0;
+    color: #666666;
+  }
+  
+  .ver-certificado {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .ver-certificado:hover {
+    background-color: #002244;
+  }
+  

@@ -1,0 +1,76 @@
+.estudios {
+    max-width: 100vw; 
+    position: relative;
+    background-image: url('./fondo5.jpg'); 
+    background-size: cover;
+    padding: 15px;
+}
+
+.estudios::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px); /* Efecto de desenfoque más suave */
+    z-index: 1;
+}
+
+.academic__title {
+    color: #1b1414; /* Un color oscuro para el texto */
+    font-weight: 700;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.academic__courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Espacio entre los cursos */
+    justify-content: center;
+}
+
+.academic__courses__box {
+    background: #e2a2a2;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px; /* Ajusta el ancho del cuadro del curso */
+    margin: 10px;
+}
+
+.academic__courses__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.academic__courses__item__title {
+    font-size: 18px; /* Ajusta el tamaño de fuente del título */
+    font-weight: 700;
+    padding: 10px;
+    text-align: center;
+    color: #000000;
+}
+
+.academic__courses__item__img {
+    display: flex;
+    justify-content: center; /* Centra la imagen dentro del contenedor */
+    padding: 10px;
+}
+
+.academic__courses__item__img img {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    height: auto;
+}
+
+.academic__courses__item__subtitle {
+    font-size: 16px; /* Ajusta el tamaño de fuente del subtítulo */
+    font-weight: 800;
+    color: #252222;
+    padding: 10px;
+    text-align: center;
+}

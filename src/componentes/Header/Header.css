@@ -1,0 +1,127 @@
+/* Estilo general del menú y botón hamburguesa */
+.menu_header {
+  background-color: #900C3F; 
+  padding: 20px 30px; 
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  border-bottom: 2px solid #333; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center;
+  max-width: 1200px;
+  position: relative;
+}
+
+.logo {
+  width: 160px; 
+  height: 160px; 
+}
+
+.titulo {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  flex-grow: 1; /* Permite que el título ocupe el espacio necesario */
+}
+
+/* Estilo del botón hamburguesa */
+.hamburger {
+  display: none; /* Ocultamos el botón hamburguesa por defecto */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 101; /* Asegura que el botón esté encima del menú */
+}
+
+.hamburger img {
+  width: 30px; /* Tamaño del ícono del menú hamburguesa */
+  height: auto;
+}
+
+/* Menú desplegable (hamburguesa) */
+.menu__nav {
+  display: flex; /* Muestra el menú por defecto en pantallas grandes */
+  flex-direction: row; /* Coloca los elementos del menú en una fila */
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__nav--open {
+  display: flex; /* Muestra el menú cuando está abierto en pantallas pequeñas */
+  flex-direction: column; /* Coloca los elementos del menú en una columna en pantallas pequeñas */
+  position: fixed; /* Fija el menú para que cubra toda la pantalla */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente para más énfasis */
+  transition: transform 0.3s ease-in-out;
+  z-index: 100; /* Asegura que el menú esté debajo del botón */
+}
+
+.menu__list {
+  list-style-type: none;
+  padding: 0; 
+  margin: 0; 
+  display: flex; 
+  flex-direction: row; /* Coloca los elementos del menú en una fila en pantallas grandes */
+  align-items: center;
+}
+
+.menu__list__item {
+  margin: 0 20px; /* Espacio adicional entre los elementos del menú */
+}
+
+.menu__list__item a {
+  text-decoration: none; 
+  color: #ffffff; 
+  font-size: 16px; 
+  transition: color 0.3s ease; 
+  padding: 10px 15px; 
+  border-radius: 5px; 
+}
+
+.menu__list__item a:hover {
+  color: #ffcccb;                           
+  background-color: rgba(255, 255, 255, 0.2); 
+}
+
+/* Media Query para tablets y móviles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* Mostramos el botón hamburguesa en pantallas pequeñas */
+  }
+
+  .menu__nav {
+    display: none; /* Ocultamos el menú normal en pantallas pequeñas */
+  }
+
+  .menu__nav--open {
+    display: flex; /* Mostramos el menú hamburguesa cuando está abierto en pantallas pequeñas */
+  }
+
+  .menu__list {
+    flex-direction: column; /* Coloca los elementos del menú en una columna en pantallas pequeñas */
+  }
+}
+
+/* Media Query para pantallas grandes */
+@media (min-width: 769px) {
+  .menu__nav {
+    display: flex; /* Mostramos el menú normal en pantallas grandes */
+  }
+
+  .hamburger {
+    display: none; /* Ocultamos el botón hamburguesa en pantallas grandes */
+  }
+}
