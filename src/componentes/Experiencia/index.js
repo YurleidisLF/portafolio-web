@@ -45,7 +45,7 @@ const proyectos = [
   {
     id: '6',
     title: 'Alura Bank',
-    img: 'experiencia/alura-ban.PNG',
+    img: 'experiencia/Alura-ban.PNG',
     description: 'Es un banco ficticio, donde ofrece servicios etc. Esta diseñado como parte de mi aprendizaje.',
     demoLink: ' https://yurleidislf.github.io/Alura-Bank/',
     repoLink: 'https://github.com/YurleidisLF/Alura-Bank',
@@ -60,7 +60,7 @@ const proyectos = [
   },{
     id: '8',
     title: 'Tac-Tac Boom',
-    img: 'experiencia/tac-tac-PMG',
+    img: 'experiencia/tac-tac.PMG',
     description: 'Este proyecto es una aplicación web que recrea el clásico juego Tic Tac Toe (Tres en línea) utilizando Angular.',
     demoLink: ' https://tac-tac-boom.vercel.app/',
     repoLink: 'https://github.com/YurleidisLF/TacTac-BOOM',
