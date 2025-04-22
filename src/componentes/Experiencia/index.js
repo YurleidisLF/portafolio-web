@@ -60,7 +60,7 @@ const proyectos = [
   },{
     id: '8',
     title: 'Tac-Tac Boom',
-    img: 'experiencia/tac-tac.PMG',
+    img: 'experiencia/tac-tac.PNG',
     description: 'Este proyecto es una aplicación web que recrea el clásico juego Tic Tac Toe (Tres en línea) utilizando Angular.',
     demoLink: ' https://tac-tac-boom.vercel.app/',
     repoLink: 'https://github.com/YurleidisLF/TacTac-BOOM',
